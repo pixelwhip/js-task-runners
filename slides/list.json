@@ -1,0 +1,81 @@
+[
+    {
+        "filename": "index.html",
+        "attr": {
+            "id": "title-slide",
+            "data-state": "state--blue"
+        }
+    },
+    {
+        "filename": "about.html",
+        "attr": {
+            "id": "about",
+            "data-state": "state--dark"
+        }
+    },
+    {
+        "attr": {
+            "data-background": "img/bg-clients.png"
+        }
+    },
+    {
+        "filename": "task-runners.html",
+        "attr": {
+            "id": "task-runners",
+            "data-state": "state--white"
+        }
+    },
+    {
+        "filename": "gulp-grunt.html",
+        "attr": {
+            "id": "gulp-grunt",
+            "data-state": "state--white"
+        }
+    },
+    {
+        "filename": "project-example.html",
+        "attr": {
+            "id": "project-example",
+            "data-state": "state--white"
+        }
+    },
+    {
+        "filename": "grunt.html",
+        "attr": {
+            "id": "grunt",
+            "data-state": "state--white"
+        }
+    },
+    {
+        "filename": "grunt-example.html",
+        "attr": {
+            "data-state": "default"
+        }
+    },
+    {
+        "filename": "grunt-pros-cons.html",
+        "attr": {
+            "data-state": "default"
+        }
+    },
+    {
+        "filename": "gulp.html",
+        "attr": {
+            "id": "gulp",
+            "data-state": "state--white"
+        }
+    },
+    {
+        "filename": "gulp-example.html",
+        "attr": {
+            "data-state": "default"
+        }
+    },
+    {
+        "filename": "gulp-pros-cons.html",
+        "attr": {
+            "data-state": "default"
+        }
+    },
+    "stuff-you-can-do.html"
+]

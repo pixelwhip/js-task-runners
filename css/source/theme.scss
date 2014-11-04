@@ -1,0 +1,479 @@
+/**
+ * Default theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+// This file has been copied over from
+// ../../bower_components/reveal.js/css/theme/source/default.scss
+
+// Default mixins and settings -----------------
+@import "../../bower_components/reveal.js/css/theme/template/mixins";
+@import "../../bower_components/reveal.js/css/theme/template/settings";
+// ---------------------------------------------
+
+// Include theme-specific fonts ----------------
+@font-face {
+        font-family: 'League Gothic';
+        src: url('../../bower_components/reveal.js/lib/font/league_gothic-webfont.eot');
+        src: url('../../bower_components/reveal.js/lib/font/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
+                 url('../../bower_components/reveal.js/lib/font/league_gothic-webfont.woff') format('woff'),
+                 url('../../bower_components/reveal.js/lib/font/league_gothic-webfont.ttf') format('truetype'),
+                 url('../../bower_components/reveal.js/lib/font/league_gothic-webfont.svg#LeagueGothicRegular') format('svg');
+
+        font-weight: normal;
+        font-style: normal;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+// ---------------------------------------------
+
+// Override theme settings ---------------------
+$heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 20px 20px rgba(0,0,0,.15);
+// Other options include e.g.
+// $mainFont: 'Open Sans', sans-serif;
+// $linkColor: #ed1dff;
+// $linkColorHover: $linkColor;
+// $headingFont: 'Montserrat', Impact, sans-serif;
+// $headingTextShadow: none;
+// $headingLetterSpacing: -0.03em;
+// $headingTextTransform: none;
+// $selectionBackgroundColor: #e0ad52;
+// $mainFontSize: 30px;
+// See ../../bower_components/reveal.js/css/theme/template/settings.scss for the full list.
+// ---------------------------------------------
+
+// Background generator ------------------------
+@mixin bodyBackground() {
+        @include radial-gradient( rgba(28,30,32,1), rgba(85,90,95,1) );
+}
+// ---------------------------------------------
+
+// Theme template ------------------------------
+@import "../../bower_components/reveal.js/css/theme/template/theme";
+// ---------------------------------------------
+
+// See ../../bower_components/reveal.js/css/theme/README.md
+// for further explanations on how reveal.js themes work.
+
+
+/**
+ * Solarized Light theme for reveal.js.
+ * Author: Achim Staebler
+ */
+
+
+// Default mixins and settings -----------------
+
+// ---------------------------------------------
+
+// Include theme-specific fonts
+@font-face {
+  font-family: 'League Gothic';
+  src: url('../../lib/font/league_gothic-webfont.eot');
+  src: url('../../lib/font/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
+     url('../../lib/font/league_gothic-webfont.woff') format('woff'),
+     url('../../lib/font/league_gothic-webfont.ttf') format('truetype'),
+     url('../../lib/font/league_gothic-webfont.svg#LeagueGothicRegular') format('svg');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BLOKK';
+  src: url('../../lib/font/blokk/BLOKKNeue-Regular.eot');
+  src: url('../../lib/font/blokk/BLOKKNeue-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../../lib/font/blokk/BLOKKNeue-Regular.woff') format('woff'),
+       url('../../lib/font/blokk/BLOKKNeue-Regular.svg#BLOKKNeue-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+
+@mixin guides($height: 1.25em) {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding-top: $height;
+  padding-bottom: $height;
+}
+
+/**
+ * Solarized colors by Ethan Schoonover
+ */
+html * {
+  color-profile: sRGB;
+  rendering-intent: auto;
+}
+
+// Solarized colors
+$base03:    #002b36;
+$base02:    #073642;
+$base01:    #586e75;
+$base00:    #657b83;
+$base0:     #839496;
+$base1:     #93a1a1;
+$base2:     #eee8d5;
+$base3:     #fdf6e3;
+$red:       #dc322f;
+$magenta:   #d33682;
+$violet:    #6c71c4;
+$cyan:      #2aa198;
+$green:     #859900;
+
+// Aten Colors
+$black:         #222222;
+$gray-dark:     #404042;
+$gray:          #999999;
+$gray-white:    #DDC1E8;
+$white:         #f8f8f8;
+$yellow:        #fcc318;
+$red:           #cc0000;
+$blue:          #006699;
+$blue-dark:    #004466;
+$blue-white:   #ccebf5;
+$orange:        #f98700;
+$orange--dark:  #f64b00;
+
+// Blueprint color scheme
+$black:         #222222;
+$gray-dark:     #2D3942;
+$gray:          #999999;
+$gray-white:    #DDC1E8;
+$white:         #f8f8f8;
+$yellow:        #fcc318;
+$red:           #cc0000;
+$blue:          #0D6B9C;
+$blue-light:    #598BA5;
+$blue-dark:     #0A4664;
+$blue-white:    #ccebf5;
+$orange:        #f98700;
+$orange--dark:  #f64b00;
+
+
+// Override theme settings (see ../template/settings.scss)
+$mainColor: $gray-dark;
+$headingColor: $blue-dark;
+$headingTextShadow: none;
+$backgroundColor: $white;
+$linkColor: $orange;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: $magenta;
+
+// Background generator
+@mixin bodyBackground() {
+  @include radial-gradient( rgba(lighten($gray, 30%) ,1), rgba($backgroundColor, 1) );
+}
+
+// Theme template ------------------------------
+@import "../../bower_components/reveal.js/css/theme/template/theme";
+// ---------------------------------------------
+
+//
+// States
+//
+
+// Blue
+  $mainColor: $white;
+  $headingColor: $white;
+  $headingTextShadow: none;
+  $backgroundColor: $gray-dark;
+  $linkColor: $yellow;
+  $linkColorHover: lighten( $linkColor, 20% );
+  $selectionBackgroundColor: $magenta;
+
+.state--blue {
+  // Override theme settings (see ../template/settings.scss)
+
+
+  // Background generator
+  @mixin bodyBackground() {
+    @include radial-gradient( rgba($backgroundColor,1), rgba(lighten($backgroundColor, 20%),1) );
+  }
+
+  @import "../../bower_components/reveal.js/css/theme/template/theme";
+}
+
+// Dark
+  $mainColor: $white;
+  $headingColor: $white;
+  $headingTextShadow: none;
+  $backgroundColor: $gray-dark;
+  $linkColor: $yellow;
+  $linkColorHover: lighten( $linkColor, 20% );
+  $selectionBackgroundColor: $magenta;
+
+.state--dark {
+  // Override theme settings (see ../template/settings.scss)
+
+  // Background generator
+  @mixin bodyBackground() {
+    @include radial-gradient( rgba($backgroundColor,1), rgba(lighten($backgroundColor, 10%),1) );
+  }
+
+  @import "../../bower_components/reveal.js/css/theme/template/theme";
+}
+
+.state--overlay {
+  .slide-background {
+    background-color: $blue-light;
+    background-blend-mode: multiply;
+  }
+}
+
+.state--luminosity {
+  @import "../../bower_components/reveal.js/css/theme/template/theme";
+
+  .slide-background {
+    background-color: $blue-light;
+    background-blend-mode: luminosity;
+  }
+}
+
+// wrap everything in .reveal section to overcome specificity
+.reveal .slide-canvas {
+  height: 95%;
+
+  h2 {
+    font-size: 96px;
+  }
+
+  .align-bottom {
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
+}
+
+//
+// Start wrapping everything to compensate for the specificity of reveal.
+//
+
+.reveal section {
+
+ p {
+  font-weight: 300;
+ }
+
+ .credit {
+  position: absolute;
+  font-size: .5em;
+  bottom: 0;
+  left: 0;
+
+  > a {
+    color: rgba($white, .06);
+  }
+}
+
+code {
+  font-family: "Andale Mono", monospace;
+}
+
+.biggie {
+  font-size: 60px;
+}
+
+.link--twitter {
+  margin-left: 2em;
+
+  > i {
+    font-size: 24px;
+    margin-right: .5em;
+  }
+}
+
+pre {
+  box-shadow: none;
+}
+
+//
+// Images
+//
+.screenshot {
+  border: 3px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+//
+// Aten Logo
+//
+
+img {
+  border: 0 !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.logo {
+  width: 400px;
+  margin-bottom: 2em;
+}
+
+.logo--small {
+  height: 200px;
+}
+
+//
+// Profile
+//
+
+.profile-header {
+    float: left;
+    width: 460px;
+    padding-top: 200px;
+}
+
+.profile-name {
+    font-size: 56px;
+    color: white;
+    text-shadow: 0 0 10px rgba($black, .8);
+}
+
+.profile-date {
+    color: white;
+}
+
+//
+// Patterns
+//
+
+.pattern-name {
+  text-align: left;
+  font-family: "Lato", "League Gothic", sans-serif;
+  font-size: 72px;
+  line-height: 90px;
+  font-weight: 900;
+  text-transform: none;
+}
+
+.pattern-description {
+  text-align: left;
+  font-size: 50px;
+  max-width: 16em;
+}
+
+//
+// Article
+//
+
+.article-wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 18px;
+  max-width: 33em;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.article {
+  text-align: left;
+}
+
+.article-paragraph {
+  font-size: 18px;
+  margin-bottom: 24px;
+  line-height: 1.4em;
+  font-weight: 400;
+}
+
+.quote,
+.quote-author {
+  box-shadow: none;
+  color: $blue;
+}
+
+.quote-author {
+  text-align: right;
+  margin-top: 1.2em;
+}
+
+.article-pullquote {
+  font-size: 22px;
+  line-height: 1.2em;
+  font-style: normal;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: .6em;
+  margin-bottom: 24px;
+  width: 100%;
+  font-weight: 700;
+  padding: .8em 0;
+  border-top: 3px solid $blue;
+  border-bottom: 3px solid $blue;
+  float: left;
+  transition: all 1s ease;
+  letter-spacing: .01em;
+}
+
+//
+// Grid
+//
+.clearfix {
+  &:before,
+  &:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+} // End .reveal .section wrapper
+
+#about {
+  .ss-twitter {
+    margin-left: 50px;
+    margin-right: 12px;
+    font-size: 24px;
+  }
+}
+
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(-360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(-360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(-360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(-360deg);
+    }
+}
+
+.table--pro-con {
+  td,
+  th {
+    width: 50%;
+    padding: .25em 1em;
+    vertical-align: top;
+  }
+
+  & > tr > th {
+    text-align: center;
+  }
+
+  & + p {
+    margin-top: 1em;
+    padding: .25em 1em;
+    background-color: rgba($blue, .2);
+    color: white;
+  }
+}
+

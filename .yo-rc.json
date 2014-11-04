@@ -1,0 +1,10 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "JS Task Runners",
+    "packageVersion": "0.0.0",
+    "useSass": true,
+    "deployToGithubPages": true,
+    "githubUsername": "pixelwhip",
+    "githubRepository": "js-task-runners"
+  }
+}

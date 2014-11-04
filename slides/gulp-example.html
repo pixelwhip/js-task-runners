@@ -1,0 +1,12 @@
+<pre><code class="js">var gulp = require('gulp');
+    concat = require('gulp-concat');
+
+gulp.task('concat', function() {
+  return gulp.src('src/**.js')
+    .pipe(concat('app.js'))
+    .pipe(gulp.dest('build/js'));
+});
+
+gulp.task('default', ['concat']);
+</code></pre>
+<p><small><strong>Figure B:</strong> Contrived <em>gulpfile.js</em></small></p>
